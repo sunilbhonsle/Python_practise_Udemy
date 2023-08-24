@@ -5,3 +5,16 @@ def even_list(rslt):
 
 x = even_list([1,2,3,4,5,6,7,8,9,10])
 print(x)
+
+# Return the no. if no. is even,if there are no even no. return nothing
+def even_list(rslt):
+ my_list = []
+ for x in rslt:
+  if x%2 == 0:
+    my_list.append(x)
+
+ return my_list
+
+x = even_list([1,9,3,1,5,11,7,3,9,11])
+print(x)
+
