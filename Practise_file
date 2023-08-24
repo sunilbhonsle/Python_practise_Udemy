@@ -37,4 +37,15 @@ def tu_unpck(work_hours):
 x = tu_unpck([('Ayan', 100000), ('PD', 100000), ('Mayur', 40000)])
 print(x)
 
+#Shuffle the list
+
+from random import shuffle
+def shuffle_list(my_list):
+ shuffle(my_list)
+ return my_list
+
+x = shuffle_list([1,2,3,98,34,23])
+print(x)
+ 
+
 
