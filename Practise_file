@@ -18,3 +18,23 @@ def even_list(rslt):
 x = even_list([1,9,3,1,5,11,7,3,9,11])
 print(x)
 
+#tuple unpacking with Python Function
+# Find the max salary of the given employees, and display the name and salary of that employee
+
+def tu_unpck(work_hours):
+ emp_name = ""
+ salary = 0
+ for (emp_name1, salary1) in work_hours:
+  if salary1>salary:
+   salary=salary1
+   emp_name=emp_name1
+
+  else:
+   pass
+
+ return(emp_name,salary)
+
+x = tu_unpck([('Ayan', 100000), ('PD', 100000), ('Mayur', 40000)])
+print(x)
+
+
