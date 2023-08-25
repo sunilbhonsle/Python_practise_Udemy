@@ -83,6 +83,18 @@ guess=player_guess()
 
 #check guess
 check_guess(mix_list, guess)
+
+#6. Define a function called myfunc that takes in a Boolean value (True or False).
+#If True, return 'Hello', and if False, return 'Goodbye'
+
+def myfnc(m):
+ if m == True:
+  return 'Hello'
+ elif m == False:
+  return 'Goodbye'
+
+x = myfnc(False)
+print(
  
 
 
