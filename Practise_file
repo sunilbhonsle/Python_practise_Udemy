@@ -94,7 +94,55 @@ def myfnc(m):
   return 'Goodbye'
 
 x = myfnc(False)
-print(
+print(x)
+
+#--------- *arg/**kwarg----------#
+
+# 1. *arg takes multiple argument.
+
+def myfnc1(*arg):
+    return sum(arg)*2
+x = myfnc1(10,20,30)
+print(x)
+
+#Instead of arg/kwarg, you can use any variable
+
+# 2. def myfnc1(*arg):
+  for list in arg:
+      print(list)
+
+# o/p: myfnc1(1,2,3,4,5)
+
+#Note: *arg returns tuple, **kwarg returns dictionary
+
+
+#3. Use **arg
+
+def myfnc(**arg):
+ print(arg)
+
+ if 'dairy' in arg:
+   print("Got my {}". format(arg['dairy']))
+ else:
+   print('Not what i need')
+
+myfnc(dairy = 'milk', veg = 'spinach')
+
+#o/p:{'dairy': 'milk', 'veg': 'spinach'}
+#Got my milk
+
+#4. use *arg and **kwarg together
+
+def myfnc(*arg, **kwarg):
+    print(arg)
+    print(kwarg)
+    print("I would like {} {}".format(arg[4], kwarg['vegie']))
+
+myfnc(10,20,30,50,70, fruit='orange', vegie='kale')
+
+#o/p:(10, 20, 30, 50, 70)
+#{'fruit': 'orange', 'vegie': 'kale'}
+#I would like 70 kale
  
 
 
