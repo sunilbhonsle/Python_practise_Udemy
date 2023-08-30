@@ -116,13 +116,13 @@ print(x)
 #Note: *arg returns tuple, **kwarg returns dictionary
 
 
-#3. Use **arg
+#3. Use **kwarg
 
-def myfnc(**arg):
- print(arg)
+def myfnc(**kwarg):
+ print(kwarg)
 
- if 'dairy' in arg:
-   print("Got my {}". format(arg['dairy']))
+ if 'dairy' in kwarg:
+   print("Got my {}". format(kwarg['dairy']))
  else:
    print('Not what i need')
 
