@@ -1,0 +1,39 @@
+# Take user input
+# Note: input by default gives string, to convert it to int, use casting
+x=int(input())
+y=int(input())
+print(x+y)
+
+# Method 1: To print specific character from the given string
+x= input("Enter a Word")
+print (x[2])
+
+
+# Method 2: To print specific character from the given string
+x= input("Enter a Word")[2]
+print (x)
+
+# o/p: picks up 3rd letter
+
+# Use eval function
+x = eval(input("Enter a word"))
+print(x)
+
+#o/p: Enter a word2 + 5 - 1
+# 6
+
+#In Python, the argv command is not a built-in command;
+#it's a part of the sys module, and it's commonly used to access command-line arguments when a
+#Python script is executed from the command line.
+#In terminal under vim, put the below code
+#argv is part of sys
+# x and y captures 1st and 2nd argument that you pass in terminal, 0th is gonna be the file name
+import sys
+
+x = int(sys.argv[1])
+y = int(sys.argv[2])
+print(x+y)
+
+#o/p:sunilbhonsle@Sunils-MacBook-Pro ~ % python3 argv_practise 3 8
+#11
+
