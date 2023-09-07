@@ -37,3 +37,6 @@ print(x+y)
 #o/p:sunilbhonsle@Sunils-MacBook-Pro ~ % python3 argv_practise 3 8
 #11
 
+#To get the details of in-built function
+help(functionname)
+
