@@ -40,3 +40,7 @@ print(x+y)
 #To get the details of in-built function
 help(functionname)
 
+#The dir() function in Python is used to list the attributes and methods of a Python object.
+import math
+print(dir(math))
+
