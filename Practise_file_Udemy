@@ -143,6 +143,27 @@ myfnc(10,20,30,50,70, fruit='orange', vegie='kale')
 #o/p:(10, 20, 30, 50, 70)
 #{'fruit': 'orange', 'vegie': 'kale'}
 #I would like 70 kale
+
+#5. Define a function called myfunc that takes in a string, and returns a matching string where every even letter is uppercase,
+#and every odd letter is lowercase.
+
+def myfunc(name):
+   b = ""
+   a =len(name)
+   for x in range(a):
+       if x%2 == 0:
+         b += name[x].upper()
+       else:
+         b += name[x].lower()
+       
+   print(b)
+   
+myfunc('sunil')
+       
+        
+        
+
+  
  
 
 
