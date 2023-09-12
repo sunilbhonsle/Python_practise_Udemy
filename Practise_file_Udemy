@@ -159,6 +159,34 @@ def myfunc(name):
    print(b)
    
 myfunc('sunil')
+
+#5. SPY GAME: Write a function that takes in a list of integers and returns True if it contains 007 in order
+ #spy_game([1,2,4,0,0,7,5]) --> True
+ #spy_game([1,0,2,4,0,5,7]) --> True
+ #spy_game([1,7,2,0,4,5,0]) --> False
+
+def less1(a):
+    q = []
+    for x in a:
+        if x in (0, 7):
+            q.append(x)
+        if (q) == [0, 0, 7]:
+             return True
+
+    return False
+
+x = less1([1,2,4,0,0,7,5])
+print(x)
+
+
+
+
+
+
+
+
+
+
        
         
         
