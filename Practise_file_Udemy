@@ -199,6 +199,50 @@ def ispangram(str1):
 b = ispangram('The quick brown fox jumps over the lazy dog')
 print(b)
 
+# Take user input and change the given input by assigning  anew string to the asked position and ask user if they want to continue playing
+# a game or not.
+
+def position_choice():
+    choice = 'wrong'
+    while choice not in ['0', '1', '2']:
+        choice = input("Pick a position [0,1,2]:")
+
+        if choice not in ['0', '1', '2']:
+            print("sorry, invalid choice")
+
+    return int(choice)
+
+x = position_choice()
+
+def repla_choice(game_list, x):
+    print(game_list)
+    user_place = input("Type a string to place at position:")
+    game_list[x] = user_place
+
+    return game_list
+
+y = repla_choice([0,1,2], x)
+print(y)
+
+def gameon_choice():
+    choice = 'wrong'
+    while choice not in ['Y', 'N']:
+        choice = input("keep playing (Y or N)?")
+        if choice not in ['Y', 'N']:
+            print("sorry invalid choice!")
+
+    if choice == 'Y':
+
+       return True
+       # repla_choice(game_list, x)
+    else:
+        return False
+
+z = gameon_choice()
+print(z)
+
+
+
 
 
 
