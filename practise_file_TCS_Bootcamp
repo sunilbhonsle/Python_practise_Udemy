@@ -22,6 +22,18 @@ print(x)
 #o/p: Enter a word2 + 5 - 1
 # 6
 
+# Use validation for the given input. Here, we are making sure that the entered value is int only. Until you enter digit, 
+# it will keep on asking for the input
+
+def user_choice():
+    choice = 'WRONG'
+    while choice.isdigit() == False:
+        choice = input("Enter a value (0-10):")
+
+    print(int(choice))
+
+user_choice()
+
 #2.
 #In Python, the argv command is not a built-in command;
 #it's a part of the sys module, and it's commonly used to access command-line arguments when a
