@@ -109,3 +109,41 @@ def resume(first, second, parent, city, phone, start, strfind, string1):
    ww = string1.split()
    print(ww)
    print(city.find(strfind))
+
+#7.
+Do as per the following to get the expected output:
+1.Print 'Mylist'
+2.Print the 1st element of  'Mylist'
+3.Print the Last element of  'Mylist'
+4.Add '3' as the Last element of 'Mylist'
+5.Change the 4th element of 'Mylist' into '60'
+6.Print 'Mylist' again
+7.Print from the '2nd' element to the '5th' element of 'Mylist'
+8.Append 'Mylist2' to 'Mylist'
+9.Print 'Mylist' again
+10.Extend 'Mylist' using 'Mylist2'
+11.Print 'Mylist' again
+12.Remove the Last element of 'Mylist'
+13.Print 'Mylist' again
+14.Print 'Length' of 'Mylist'
+
+
+def List_Op(Mylist, Mylist2):
+    # Write your code here
+    print(Mylist)
+    print(Mylist[1])
+    print(Mylist[-1])
+    Mylist.append(3)
+    Mylist[3] = 60
+    print(Mylist)
+    print(Mylist[1:5])
+    Mylist.append(Mylist2)
+    print(Mylist)
+    Mylist.extend(Mylist2)
+    print(Mylist)
+    Mylist.pop()
+    print(Mylist)
+    print(len(Mylist))
+
+
+
