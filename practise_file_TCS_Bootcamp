@@ -145,5 +145,34 @@ def List_Op(Mylist, Mylist2):
     print(Mylist)
     print(len(Mylist))
 
+#8. Define a function called 'tuplefunction' which takes four parameters
+
+The first parameter is list1 which takes a list of integers
+The second parameter is list2 which takes a list of strings
+The third parameter is string1 which takes a string
+The fourth parameter is n which takes an integer
+The function definition code stub is given in the editor. Generate the print statements based on condition given below:
+convert the lists(list1,list2) into tuples and store them as tuple1 and tuple2.
+concatenate tuple1 and tuple2 and print the concatenated tuple.
+print the 4th index in the concatenated tuple.
+create a nested tuple out of the two tuples(tuple1 and tuple2).
+print the length of the nested tuple.
+create a tuple with repetition of the string string1, n number of times and print tuple
+print the maximum if tuple tuple1.
+
+def tuplefunction(list1, list2, string1, n):
+    # Write your code here
+
+    tuple1= tuple(list1)
+    tuple2= tuple(list2)
+    mm = (tuple1+tuple2)
+    print(mm)
+    print(mm[4])
+    x =(tuple1, tuple2)
+    print(x)
+    print(len(x))
+    rep = tuple((string1,)*n)
+    print(rep)
+    print(max(tuple1))
 
 
