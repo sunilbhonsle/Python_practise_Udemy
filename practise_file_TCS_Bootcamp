@@ -210,3 +210,27 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+
+# While-else, the below code is correct
+
+count = 0
+while count < 2:
+   print (count, " is  less than 2")
+   count = count + 2
+else:
+   print (count, " is not less than 2")
+
+#Use of end
+for char in 'Welcome':
+       print(char, end='*')
+
+Output:
+W*
+e*
+l*
+c*
+o*
+m*
+e*
+       print()
+
