@@ -107,5 +107,18 @@ while True:
     else:
         print("Invalid Operation")
 
+# Write a program to generate the reverse of a given number N. Print the corresponding reverse number.
+
+# Note: If a number has trailing zeros, then its reverse will not include them. For e.g., reverse of 10400 will be 401 instead of 00401.
+
+x = int(input())
+x1=str(x)
+y=x1.rstrip('0')
+z = y[::-1]
+print(int(z))
+
+
+
+
 
 
