@@ -117,6 +117,20 @@ y=x1.rstrip('0')
 z = y[::-1]
 print(int(z))
 
+# Write a program to determine if given number is palindrome or not. Print true if it is palindrome, false otherwise.
+# Palindrome are the numbers for which reverse is exactly same as the original one. For eg. 121
+
+x = (input())
+x1=str(x)
+
+if x==x[::-1]:
+    print('true')
+else:
+    print('false')
+
+
+
+
 
 
 
